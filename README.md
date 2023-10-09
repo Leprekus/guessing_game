@@ -7,3 +7,11 @@
 - The **&** indicates that the variable passed is a reference ```.read_line(&mut guess)```
   - Note: ```.read_line(&guess)``` passes an immutable reference
 - Enums contain multiple states, each one is called a variant
+
+# Ownership
+
+Working with the stack is faster than the heap.
+
+- Each value in Rust has an owner
+- There can only be one owner at a time
+- When the owner goes out of scope the value gets dropped
